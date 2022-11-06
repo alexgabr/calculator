@@ -1,0 +1,66 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int sp;
+    double a,b,c,sum,prod,med,rsum,rprod;{
+        cout<<"*****************************************"<<endl;
+        cout<<"  C  A  L  C  U  L  A  T  O  R"<<endl;
+        cout<<" "<<endl;
+        cout<<" Primul nr:";cin>>a;
+        cout<<"* * * * * *"<<endl;
+        cout<<" Al doilea nr:";cin>>b;
+        cout<<"* * * * * *"<<endl;
+        cout<<" Al treilea nr (daca nu exista un al treilea nr. sa se introduca 1):";cin>>c;
+        cout<<"* * * * * *"<<endl;
+    }
+    if(c==1){
+        sum=a+b;
+        prod=a*b;
+        med=sum/2;
+        rsum=sqrt(sum);
+        rprod=sqrt(prod);
+    }
+    else{
+        sum=a+b+c;
+        prod=a*b*c;
+        med=sum/3;
+        rsum=sqrt(sum);
+        rprod=sqrt(prod);
+    }
+    cout<<" Suma:"<<sum<<endl;
+    cout<<" "<<endl;
+    cout<<" Produsul:"<<prod<<endl;
+    cout<<" "<<endl;
+    cout<<" Media aritmetica:"<<med<<endl;
+    cout<<" "<<endl;
+    cout<< "|"<< " Radical din "<<sum<< " este:"<<rsum<<endl;
+    cout<< "|"<< " "<<endl;
+    cout<< "|"<< " Radical din "<<prod<< " este:"<<rprod<<endl;
+    cout<< " "<<endl;
+    if(c==1){
+        sp=a+b;
+        {
+        if(sp%2==0 && sp>=0){
+            cout<< "Suma numerelor este PARA."<<endl;
+            }
+        if(!(sp%2==0 && sp>=0)){
+            cout<< "Suma numerelor este IMPARA."<<endl;
+            }
+        }
+    }
+    else{
+        sp=a+b+c;
+        {
+        if(sp%2==0 && sp>=0){
+            cout<< "Suma numerelor este PARA."<<endl;
+            }
+        if(!(sp%2==0 && sp>=0)){
+            cout<< "Suma numerelor este IMPARA."<<endl;
+            }
+        }
+    }
+    cout<<"*****************************************"<<endl;
+    return 0;
+}
